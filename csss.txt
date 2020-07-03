@@ -1,0 +1,11 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+background-size: cover;
+    background-position: center center;
+width:100%;
+max-heigth:100%;
+border-radius: 500px;
