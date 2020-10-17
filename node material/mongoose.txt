@@ -1,0 +1,22 @@
+const url=require('../config/keys')
+const asset=require('assert')
+const mongoose=require('mongoose')
+const model=require('../model/wish');
+mongoose.connect(url,{useUnifiedTopology: true,useNewUrlParser: true,useFindAndModify: false},(err)=>{
+  asset.equal(err,null,'DB failed to connected')
+     console.log('Successfully connected');
+})
+mongodb://localhost:27017/mohit
+------------------------------------
+mongoose
+  .connect(process.env.DATABASE, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  })
+  .then(() => {
+    console.log("DB CONNECTED");
+  })
+  .catch(() => {
+    console.log("error in connecting to DB");
+  });

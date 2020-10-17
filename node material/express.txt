@@ -1,0 +1,25 @@
+admin:amaan password:1234
+body-parser: const bodyparser = require('body-parser');
+// praser
+app.use(bodyparser.json())
+app.use(bodyparser.urlencoded({ extended: false }));
+
+
+public:app.use(express.static("public"))
+
+
+var session=require("express-session")
+app.use(session())
+router:var express=require("express")
+const app = express()
+var router=express.Router()
+
+engine:// template engine
+app.set("view engine",'ejs')
+  or
+// template engine
+app.set('views', path.join(__dirname, 'views'));
+
+// Set view engine as EJS
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');

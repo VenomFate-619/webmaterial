@@ -1,0 +1,17 @@
+I know this is a little late answer,
+
+you can use if and else statements in ejs as follows
+
+<% if (something) { %>
+   // Then do some operation
+<% } else { %>
+   // Then do some operation
+<% } %>
+But there is another thing I want to emphasize is that if you use the code this way,
+
+<% if (something) { %>
+   // Then do some operation
+<% } %>
+<% else { %>
+   // Then do some operation
+<% } %>
